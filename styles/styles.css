@@ -172,6 +172,7 @@ nav a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  color: #2c2c2c;
 }
 
 .intro h3 {
@@ -420,7 +421,7 @@ nav a:hover {
 }
 
 footer {
-  background: #5d5e5e;
+  background: #154353;
   position: fixed;
   bottom: 0;
   width: 100%;

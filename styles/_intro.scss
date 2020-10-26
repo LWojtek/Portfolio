@@ -16,7 +16,6 @@ nav {
             color: #5d5e5e;
             padding: 1rem;
 
-
       }
 
       ul {
@@ -78,6 +77,7 @@ nav {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-block;
+            color: $gray-text;
       }
 
       h3 {
