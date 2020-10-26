@@ -11,24 +11,24 @@
 
 html {
       font-size: 62.5%;
-
+      font-family: 'Poppins', sans-serif;
 }
 
 
 h1 {
-      font-size: ;
+      font-size: $header1;
 }
 
 h2 {
-      font-size: ;
+      font-size: $header2;
 }
 
 h3 {
-      font-size: ;
+      font-size: $header3;
 }
 
 h4 {
-      font-size: ;
+      font-size: $header4;
 }
 
 li,
@@ -37,24 +37,14 @@ label,
 input,
 a,
 p {
-      font-size: ;
+      font-size: $text;
 }
 
 a {
       text-decoration: none;
-      color: black;
+      color: $gray-text;
 }
 
 ul {
       list-style: none;
-}
-
-
-/* Helper Class */
-
-.flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
 }

@@ -1,0 +1,21 @@
+footer {
+      background: #5d5e5e;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      height: 10vh;
+      padding: 0% 5%;
+      @include flex(flex-start, center, row);
+
+
+      ul {
+            flex: 1 1 40rem;
+            @include flex(space-around, center, row);
+      }
+
+      h4 {
+            flex: 1 1 40rem;
+            @include flex(flex-start, center, row);
+      }
+}

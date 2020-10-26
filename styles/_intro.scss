@@ -1,0 +1,184 @@
+nav {
+      @include flex(space-between, center, row);
+      min-height: 10vh;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .logo {
+            @include flex(center, center, column);
+            flex: 1 1 20rem;
+            margin-top: 2rem;
+      }
+
+      h1 {
+
+            font-size: 4rem;
+            color: #5d5e5e;
+            padding: 1rem;
+
+
+      }
+
+      ul {
+            @include flex(space-around, center, row);
+            flex: 1 1 40rem;
+            margin: 2rem 0;
+      }
+
+
+      a {
+            background-color: transparent;
+            color: black;
+            padding: 1rem 3rem;
+            border-radius: 2rem;
+            transition: .5s;
+            outline: none;
+
+
+            &:hover {
+                  border: none;
+                  background-color: transparent;
+                  box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: .2),
+                        0px 10px 20px rgba($color: #000000, $alpha: 0.2);
+
+            }
+
+
+
+      }
+
+}
+
+.active {
+      background-color: transparent;
+      font-size: 3rem;
+      color: black;
+      padding: 1rem 3rem;
+      border-radius: 2rem;
+      box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: .2),
+            0px 10px 20px rgba($color: #000000, $alpha: 0.2);
+
+      ;
+
+}
+
+.intro {
+      height: 80vh;
+      width: 90%;
+      margin: auto;
+      flex-wrap: wrap;
+
+
+      @include flex(space-between, center, row);
+
+      h2 {
+            font-size: 8rem;
+            padding-top: 2rem;
+            background: $gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+      }
+
+      h3 {
+            font-size: 6rem;
+            padding: 2rem 0;
+      }
+
+      p {
+            padding-top: 2rem;
+            color: $gray-text;
+      }
+
+
+}
+
+.splash {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      height: 100%;
+      z-index: -1;
+}
+
+.intro-social {
+      margin-top: 4rem;
+      width: 100%;
+
+
+      a {
+            margin-right: 5rem;
+      }
+
+      img {
+            width: 10rem;
+      }
+}
+
+
+
+.intro-text,
+.intro-images {
+      flex: 1 1 40rem;
+      text-align: center;
+
+}
+
+#plant-left {
+      animation: plant 1s ease-in-out infinite alternate .5s;
+      transform-box: fill-box;
+      transform-origin: bottom;
+}
+
+
+#plant-right {
+      animation: plant 1s ease-in-out infinite alternate .5s;
+      transform-box: fill-box;
+      transform-origin: bottom;
+}
+
+#me {
+      animation: me 2s ease infinite alternate;
+      transform-origin: bottom;
+}
+
+#clock-arrow {
+      animation: clock 1.5s linear infinite;
+      transform-box: fill-box;
+      transform-origin: bottom;
+}
+
+/* k e y f r a m e s */
+
+@keyframes plant {
+      from {
+            transform: rotateZ(-5deg)
+      }
+
+      to {
+            transform: rotateZ(5deg)
+      }
+}
+
+@keyframes me {
+      from {
+            transform: rotateZ(-2deg);
+      }
+
+      to {
+
+            transform: rotateZ(2deg);
+      }
+}
+
+@keyframes clock {
+      from {
+            transform: rotateZ(0deg);
+      }
+
+      to {
+            transform: rotateZ(360deg);
+
+      }
+
+}
