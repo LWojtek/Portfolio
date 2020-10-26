@@ -12,9 +12,10 @@ nav {
 
       h1 {
 
-            font-size: 4rem;
+            font-size: 5rem;
             color: #5d5e5e;
             padding: 1rem;
+            font-family: 'Turret Road'
 
       }
 
@@ -78,6 +79,7 @@ nav {
             -webkit-text-fill-color: transparent;
             display: inline-block;
             color: $gray-text;
+
       }
 
       h3 {
@@ -143,9 +145,9 @@ nav {
 }
 
 #clock-arrow {
-      animation: clock 1.5s linear infinite;
+      animation: clock 8s linear infinite;
       transform-box: fill-box;
-      transform-origin: bottom;
+      transform-origin: 3.5px 54px;
 }
 
 /* k e y f r a m e s */

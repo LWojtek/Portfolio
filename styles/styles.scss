@@ -7,10 +7,7 @@ $gradient: linear-gradient(to left, #38d39f, #38a4d3);
 $background-color: #154353;
 $gray-text: #2c2c2c;
 
-@font-face {
-      font-family: 'Iconic';
-      src: url("../fonts/iconmonstr-iconic-font.ttf");
-}
+
 
 @mixin flex($justify, $align, $direction) {
       display: flex;
