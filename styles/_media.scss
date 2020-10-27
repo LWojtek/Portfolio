@@ -18,9 +18,13 @@
       }
 
       .intro-social {
-            @include flex(center, center, row)
+            @include flex(flex-start, center, row);
+
+
+
       }
 }
+
 
 @media screen and (max-width: 1024px) {
       html {
@@ -41,6 +45,9 @@
             a {
                   margin: 2rem;
             }
+
+
+
       }
 
 
