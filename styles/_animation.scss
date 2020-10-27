@@ -1,0 +1,170 @@
+#head {
+
+      animation: head 1s ease-in-out infinite alternate;
+      transform-origin: bottom;
+      transform-box: fill-box;
+}
+
+#left-plant {
+      animation: plant-slide-left 1s ease-in,
+            plant 1s ease-in-out infinite alternate 1s;
+      transform-box: fill-box;
+      transform-origin: bottom;
+}
+
+
+#right-plant {
+      animation: plant-slide-right 2s ease-in,
+            plant 1s ease-in-out infinite alternate 2s;
+
+      transform-box: fill-box;
+      transform-origin: bottom;
+}
+
+
+#clock-arrow {
+      animation: clock 8s linear infinite;
+      transform-box: fill-box;
+      transform-origin: 3.5px 45px;
+}
+
+#left-arm {
+      animation: left-arm .2s ease-in-out infinite alternate;
+      transform-box: fill-box;
+      transform-origin: top;
+}
+
+#right-arm {
+      animation: right-arm .2s ease-in-out infinite alternate .3s;
+      transform-box: fill-box;
+      transform-origin: top;
+}
+
+#right-pot {
+      animation: pot-slide-right 1.5s ease-in;
+      transform-box: fill-box;
+      transform-origin: bottom;
+
+}
+
+#left-pot {
+      animation: pot-slide-left .8s ease-in;
+      transform-box: fill-box;
+      transform-origin: bottom;
+}
+
+#logo {
+      animation: appear 1s forwards;
+}
+
+/* k e y f r a m e s */
+
+
+@keyframes left-arm {
+      from {
+            transform: translateX(50%),
+                  rotateZ(2deg);
+      }
+
+      to {
+            transform: rotateZ(-1deg);
+      }
+}
+
+@keyframes right-arm {
+      from {
+            transform: rotateZ(-1deg);
+
+      }
+
+      to {
+            transform: rotateZ(1deg);
+      }
+}
+
+
+@keyframes plant {
+      from {
+            transform: rotateZ(-2deg)
+      }
+
+      to {
+            transform: rotateZ(2deg)
+      }
+}
+
+@keyframes plant-slide-right {
+      from {
+            transform: translateX(1000%)
+      }
+
+      to {
+            transform: translateX(0%)
+      }
+}
+
+@keyframes plant-slide-left {
+      from {
+            transform: translateX(-1000%)
+      }
+
+      to {
+            transform: translateX(0%)
+      }
+}
+
+
+@keyframes clock {
+      from {
+            transform: rotateZ(0deg);
+      }
+
+      to {
+            transform: rotateZ(360deg);
+
+      }
+
+}
+
+@keyframes pot-slide-left {
+      from {
+            transform: translateX(-1000%)
+      }
+
+      to {
+            transform: translateX(0%)
+      }
+}
+
+@keyframes pot-slide-right {
+      from {
+            transform: translateX(1000%)
+      }
+
+      to {
+            transform: translateX(0%)
+      }
+
+}
+
+@keyframes head {
+      from {
+            transform: rotateZ(-2deg);
+      }
+
+      to {
+            transform: rotateZ(2deg);
+      }
+
+}
+
+@keyframes appear {
+      from {
+            opacity: 0;
+      }
+
+      to {
+            opacity: 1;
+      }
+
+}

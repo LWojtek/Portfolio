@@ -51,7 +51,7 @@ nav {
 
 .active {
       background-color: transparent;
-      font-size: 3rem;
+
       color: black;
       padding: 1rem 3rem;
       border-radius: 2rem;
@@ -65,7 +65,7 @@ nav {
 .intro {
       height: 80vh;
       width: 90%;
-      margin: auto;
+      margin: 0 auto;
       flex-wrap: wrap;
 
 
@@ -108,79 +108,19 @@ nav {
       width: 100%;
 
 
-      a {
-            margin-right: 5rem;
-      }
+
 
       img {
             width: 10rem;
       }
-}
 
+
+}
 
 
 .intro-text,
 .intro-images {
       flex: 1 1 40rem;
       text-align: center;
-
-}
-
-#plant-left {
-      animation: plant 1s ease-in-out infinite alternate .5s;
-      transform-box: fill-box;
-      transform-origin: bottom;
-}
-
-
-#plant-right {
-      animation: plant 1s ease-in-out infinite alternate .5s;
-      transform-box: fill-box;
-      transform-origin: bottom;
-}
-
-#me {
-      animation: me 2s ease infinite alternate;
-      transform-origin: bottom;
-}
-
-#clock-arrow {
-      animation: clock 8s linear infinite;
-      transform-box: fill-box;
-      transform-origin: 3.5px 54px;
-}
-
-/* k e y f r a m e s */
-
-@keyframes plant {
-      from {
-            transform: rotateZ(-5deg)
-      }
-
-      to {
-            transform: rotateZ(5deg)
-      }
-}
-
-@keyframes me {
-      from {
-            transform: rotateZ(-2deg);
-      }
-
-      to {
-
-            transform: rotateZ(2deg);
-      }
-}
-
-@keyframes clock {
-      from {
-            transform: rotateZ(0deg);
-      }
-
-      to {
-            transform: rotateZ(360deg);
-
-      }
 
 }
