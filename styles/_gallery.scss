@@ -1,0 +1,23 @@
+.swiper-slide {
+      margin: 0 auto;
+      text-align: center;
+}
+
+.swiper-slide img {
+      height: 700px;
+      border-radius: .5rem;
+}
+
+.swiper-button-prev {
+      margin-left: 10rem;
+
+}
+
+.swiper-button-next {
+      margin-right: 10rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+      outline: none;
+}

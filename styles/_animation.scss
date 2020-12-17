@@ -1,19 +1,28 @@
-#head {
+.head {
 
       animation: head 1s ease-in-out infinite alternate;
       transform-origin: bottom;
       transform-box: fill-box;
 }
 
-#left-plant {
+.head-stop {
+      animation: none;
+}
+
+
+.left-plant {
       animation: plant-slide-left 1s ease-in,
             plant 1s ease-in-out infinite alternate 1s;
       transform-box: fill-box;
       transform-origin: bottom;
 }
 
+.left-plant-stop {
+      animation: none;
+}
 
-#right-plant {
+
+.right-plant {
       animation: plant-slide-right 2s ease-in,
             plant 1s ease-in-out infinite alternate 2s;
 
@@ -21,23 +30,39 @@
       transform-origin: bottom;
 }
 
+.right-plant-stop {
+      animation: none;
+}
 
-#clock-arrow {
+
+.clock-arrow {
       animation: clock 8s linear infinite;
       transform-box: fill-box;
       transform-origin: 3.5px 45px;
 }
 
-#left-arm {
+.clock-arrow-stop {
+      animation: none;
+}
+
+.left-arm {
       animation: left-arm .2s ease-in-out infinite alternate;
       transform-box: fill-box;
       transform-origin: top;
 }
 
-#right-arm {
+.left-arm-stop {
+      animation: none;
+}
+
+.right-arm {
       animation: right-arm .2s ease-in-out infinite alternate .3s;
       transform-box: fill-box;
       transform-origin: top;
+}
+
+.right-arm-stop {
+      ANIMATION: NONE;
 }
 
 #right-pot {
@@ -54,7 +79,7 @@
 }
 
 #logo {
-      animation: appear 1s forwards;
+      animation: appear 1s ease-in-out forwards;
 }
 
 /* k e y f r a m e s */
@@ -157,6 +182,8 @@
       }
 
 }
+
+
 
 @keyframes appear {
       from {

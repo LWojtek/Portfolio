@@ -315,6 +315,29 @@ nav a:hover {
   background-color: rgba(93, 94, 94, 0.7);
 }
 
+.swiper-slide {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.swiper-slide img {
+  height: 700px;
+  border-radius: .5rem;
+}
+
+.swiper-button-prev {
+  margin-left: 10rem;
+}
+
+.swiper-button-next {
+  margin-right: 10rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none;
+}
+
 footer {
   background: #154353;
   position: fixed;
@@ -375,7 +398,7 @@ footer h4 {
           flex-direction: row;
 }
 
-#head {
+.head {
   -webkit-animation: head 1s ease-in-out infinite alternate;
           animation: head 1s ease-in-out infinite alternate;
   -webkit-transform-origin: bottom;
@@ -383,7 +406,12 @@ footer h4 {
   transform-box: fill-box;
 }
 
-#left-plant {
+.head-stop {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.left-plant {
   -webkit-animation: plant-slide-left 1s ease-in, plant 1s ease-in-out infinite alternate 1s;
           animation: plant-slide-left 1s ease-in, plant 1s ease-in-out infinite alternate 1s;
   transform-box: fill-box;
@@ -391,7 +419,12 @@ footer h4 {
           transform-origin: bottom;
 }
 
-#right-plant {
+.left-plant-stop {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.right-plant {
   -webkit-animation: plant-slide-right 2s ease-in, plant 1s ease-in-out infinite alternate 2s;
           animation: plant-slide-right 2s ease-in, plant 1s ease-in-out infinite alternate 2s;
   transform-box: fill-box;
@@ -399,7 +432,12 @@ footer h4 {
           transform-origin: bottom;
 }
 
-#clock-arrow {
+.right-plant-stop {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.clock-arrow {
   -webkit-animation: clock 8s linear infinite;
           animation: clock 8s linear infinite;
   transform-box: fill-box;
@@ -407,7 +445,12 @@ footer h4 {
           transform-origin: 3.5px 45px;
 }
 
-#left-arm {
+.clock-arrow-stop {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.left-arm {
   -webkit-animation: left-arm .2s ease-in-out infinite alternate;
           animation: left-arm .2s ease-in-out infinite alternate;
   transform-box: fill-box;
@@ -415,12 +458,21 @@ footer h4 {
           transform-origin: top;
 }
 
-#right-arm {
+.left-arm-stop {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.right-arm {
   -webkit-animation: right-arm .2s ease-in-out infinite alternate .3s;
           animation: right-arm .2s ease-in-out infinite alternate .3s;
   transform-box: fill-box;
   -webkit-transform-origin: top;
           transform-origin: top;
+}
+
+.right-arm-stop {
+  ANIMATION: NONE;
 }
 
 #right-pot {
@@ -440,8 +492,8 @@ footer h4 {
 }
 
 #logo {
-  -webkit-animation: appear 1s forwards;
-          animation: appear 1s forwards;
+  -webkit-animation: appear 1s ease-in-out forwards;
+          animation: appear 1s ease-in-out forwards;
 }
 
 /* k e y f r a m e s */
