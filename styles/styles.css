@@ -948,4 +948,15 @@ footer h4 {
     height: 60vh;
   }
 }
+
+@media screen and (max-width: 577px) {
+  nav ul {
+    display: block;
+    width: 100%;
+  }
+  nav ul li {
+    margin: 1rem auto;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
