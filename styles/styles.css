@@ -246,7 +246,7 @@ nav a:hover {
 }
 
 .swiper-slide {
-  margin: 0 auto;
+  margin: 5rem auto;
   text-align: center;
 }
 
@@ -957,6 +957,20 @@ footer h4 {
   nav ul li {
     margin: 1rem auto;
     text-align: center;
+  }
+  .swiper-slide {
+    margin: 0 auto;
+  }
+  .swiper-slide img {
+    max-height: 300px;
+    border-radius: .5rem;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-container {
+    max-height: 40vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
