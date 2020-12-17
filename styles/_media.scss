@@ -302,8 +302,16 @@
 
 
       .swiper-container {
-            max-height: 40vh;
+            min-height: 40vh;
+
       }
+
+      footer {
+            position: initial;
+      }
+
+
+
 
 
 }

@@ -6,8 +6,9 @@ nav {
 
       .logo {
             @include flex(center, center, column);
-            flex: 1 1 20rem;
-            margin-top: 2rem;
+            flex: 1 1 25rem;
+            margin: 2rem 0.2rem;
+
       }
 
       h1 {
@@ -22,14 +23,14 @@ nav {
       ul {
             @include flex(space-around, center, row);
             flex: 1 1 40rem;
-            margin: 2rem 0;
+            margin: 1rem 0;
       }
 
 
       a {
             background-color: transparent;
             color: black;
-            padding: 1rem 3rem;
+            // padding: 1rem 3rem;
             border-radius: 2rem;
             transition: .5s;
             outline: none;
