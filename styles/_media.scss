@@ -20,8 +20,10 @@
       .intro-social {
             @include flex(flex-start, center, row);
 
+      }
 
-
+      footer {
+            position: initial;
       }
 }
 
@@ -91,6 +93,10 @@
                   width: 70%;
             }
       }
+
+
+
+
 }
 
 @media screen and (max-width: 800px) {
