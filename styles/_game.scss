@@ -1,0 +1,69 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+.game {
+      cursor: url('../game/assets/cursor.png'), default;
+      background: #c0c86e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+      .bg {
+            background: url('../game/assets/background.png');
+            background-repeat: no-repeat;
+            width: 1920px;
+            height: 1080px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+      }
+
+      .hole {
+            background: black;
+            border-radius: 50%;
+            overflow: visible;
+            width: 267px;
+            height: 267px;
+      }
+
+      .hole-container {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .mole {
+            position: relative;
+            right: 30px;
+            top: 10px;
+      }
+
+      .hungry {
+            cursor: url('../game/assets/cursor-worm.png'), default;
+      }
+
+      .gone,
+      .hide {
+            display: none;
+      }
+
+      .worm {
+            width: 1660px;
+      }
+
+      .worm-container {
+            overflow: hidden;
+            transition: width .5s ease-in-out;
+      }
+
+      .worm-box {
+            width: 1660px;
+      }
+}
