@@ -173,7 +173,6 @@ nav a:hover {
 
 .intro h2 {
   font-size: 8rem;
-  padding-top: 2rem;
   background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
   background: linear-gradient(to left, #38d39f, #38a4d3);
   -webkit-background-clip: text;
@@ -216,6 +215,58 @@ nav a:hover {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   text-align: center;
+}
+
+/* TYPE TEXT */
+.type__text {
+  -webkit-animation: type 2s steps(15), blink 0.6s infinite alternate;
+          animation: type 2s steps(15), blink 0.6s infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 14ch;
+  border-right: 8px solid #353535;
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes type-back {
+  from {
+    width: 14ch;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes type-back {
+  from {
+    width: 14ch;
+  }
+  to {
+    width: 0;
+  }
 }
 
 .projects {
@@ -770,9 +821,6 @@ footer h4 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  footer {
-    position: initial;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1004,9 +1052,6 @@ footer h4 {
   }
   .swiper-container {
     min-height: 40vh;
-  }
-  footer {
-    position: initial;
   }
 }
 

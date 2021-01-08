@@ -79,12 +79,15 @@ nav {
 
       h2 {
             font-size: 8rem;
-            padding-top: 2rem;
+            // padding-top: 2rem;
+
             background: $gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-block;
             color: $gray-text;
+            // font-family: monospace;
+            ;
 
       }
 
@@ -130,5 +133,42 @@ nav {
 .intro-images {
       flex: 1 1 40rem;
       text-align: center;
+
+}
+
+/* TYPE TEXT */
+
+.type__text {
+      animation: type 2s steps(15),
+            blink .6s infinite alternate;
+
+      overflow: hidden;
+      white-space: nowrap;
+      width: 14ch;
+      border-right: 8px solid rgb(53, 53, 53);
+}
+
+
+@keyframes type {
+      from {
+            width: 0;
+      }
+
+}
+
+@keyframes blink {
+      50% {
+            border-color: transparent;
+      }
+}
+
+@keyframes type-back {
+      from {
+            width: 14ch;
+      }
+
+      to {
+            width: 0;
+      }
 
 }
