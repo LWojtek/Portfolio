@@ -200,18 +200,18 @@ nav a:hover {
 }
 
 .wait2s {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.wait3s {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.wait4s {
+.wait3s {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+}
+
+.wait4s {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -260,11 +260,13 @@ nav a:hover {
 
 /* TYPE TEXT */
 .type__text {
-  -webkit-animation: type 2s steps(15), blink 0.6s infinite alternate;
-          animation: type 2s steps(15), blink 0.6s infinite alternate;
+  -webkit-animation: type 2s steps(15) forwards, blink 0.8s infinite alternate;
+          animation: type 2s steps(15) forwards, blink 0.8s infinite alternate;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
   overflow: hidden;
   white-space: nowrap;
-  width: 14ch;
+  width: 0ch;
   border-right: 4px solid #5e5e5e;
 }
 
@@ -272,11 +274,17 @@ nav a:hover {
   from {
     width: 0;
   }
+  to {
+    width: 14ch;
+  }
 }
 
 @keyframes type {
   from {
     width: 0;
+  }
+  to {
+    width: 14ch;
   }
 }
 
@@ -289,24 +297,6 @@ nav a:hover {
 @keyframes blink {
   50% {
     border-color: transparent;
-  }
-}
-
-@-webkit-keyframes type-back {
-  from {
-    width: 14ch;
-  }
-  to {
-    width: 0;
-  }
-}
-
-@keyframes type-back {
-  from {
-    width: 14ch;
-  }
-  to {
-    width: 0;
   }
 }
 

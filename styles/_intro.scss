@@ -112,15 +112,15 @@ nav {
 }
 
 .wait2s {
-      animation-delay: 2s;
-}
-
-.wait3s {
       animation-delay: 3s;
 }
 
-.wait4s {
+.wait3s {
       animation-delay: 4s;
+}
+
+.wait4s {
+      animation-delay: 5s;
 }
 
 @keyframes fadeIn {
@@ -168,12 +168,12 @@ nav {
 /* TYPE TEXT */
 
 .type__text {
-      animation: type 2s steps(15),
-            blink .6s infinite alternate;
-
+      animation: type 2s steps(15) forwards,
+            blink .8s infinite alternate;
+      animation-delay: .5s;
       overflow: hidden;
       white-space: nowrap;
-      width: 14ch;
+      width: 0ch;
       border-right: 4px solid rgb(94, 94, 94);
 }
 
@@ -181,6 +181,12 @@ nav {
 @keyframes type {
       from {
             width: 0;
+
+      }
+
+      to {
+            width: 14ch;
+
       }
 
 }
@@ -189,15 +195,4 @@ nav {
       50% {
             border-color: transparent;
       }
-}
-
-@keyframes type-back {
-      from {
-            width: 14ch;
-      }
-
-      to {
-            width: 0;
-      }
-
 }
