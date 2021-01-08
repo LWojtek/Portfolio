@@ -192,6 +192,46 @@ nav a:hover {
   color: #2c2c2c;
 }
 
+.fadeIn {
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.wait2s {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.wait3s {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.wait4s {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .splash {
   position: absolute;
   top: 0%;
