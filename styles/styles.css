@@ -224,7 +224,7 @@ nav a:hover {
   overflow: hidden;
   white-space: nowrap;
   width: 14ch;
-  border-right: 8px solid #353535;
+  border-right: 4px solid #5e5e5e;
 }
 
 @-webkit-keyframes type {
